@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+📦 Asset Management App – React Native (Frontend)
+This is a mobile application built with React Native that allows users to manage assets with features like adding, editing, deleting, filtering by categories and statuses, uploading images, and managing authentication.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🚀 Features
+✅ User Login & Registration (Static Auth for demo)
 
-## Get started
+✅ Add, Edit, and Delete Assets
 
-1. Install dependencies
+✅ Manage Asset Categories and Statuses
 
-   ```bash
-   npm install
-   ```
+✅ Date Pickers for Purchase and Warranty Dates
 
-2. Start the app
+✅ Upload Image for Assets
 
-   ```bash
-   npx expo start
-   ```
+✅ Persistent Global State using Context API
 
-In the output, you'll find options to open the app in a
+✅ Toast notifications and form validations
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+✅ Responsive UI with clean design
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+✅ Tab Navigation with icons (Home, Settings, etc.)
 
-## Get a fresh project
+✅ Logout functionality
 
-When you're ready, run:
+🧰 Tech Stack
+React Native CLI
 
-```bash
-npm run reset-project
-```
+React Navigation
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Context API (for global state management)
 
-## Learn more
+@react-native-picker/picker (dropdowns)
 
-To learn more about developing your project with Expo, look at the following resources:
+@react-native-community/datetimepicker (date selection)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Expo Vector Icons
 
-## Join the community
+ToastAndroid (Android toast messages)
 
-Join our community of developers creating universal apps.
+📸 Screens
+Login & Register
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Home (Asset List)
+
+Add/Edit Asset
+
+Add Category
+
+Add Status
+
+Settings (with logout)
+
+🛠️ Setup Instructions
+1. Clone the Repo
+git clone https://github.com/Prasanth-777/Asset-Mgmt-App.git
+
+
+3. Install Dependencies
+npm install
+
+4. Start Metro Bundler
+npx expo start
+
+
+
+🔐 Demo Login Credentials
+Email: prasanth@gmail.com
+Password: 123456
+
+📁 Folder Structure
+
+├── App.js
+├── /screens
+│   ├── LoginScreen.js
+│   ├── RegisterScreen.js
+│   ├── HomeScreen.js
+│   ├── AddAssetScreen.js
+│   ├── EditAssetScreen.js
+│   ├── AddCategoryScreen.js
+│   ├── AddStatusScreen.js
+│   └── SettingsScreen.js
+├── /context
+│   └── AssestContext.js
+├── /assets
+│   └── (App assets/images/icons)
